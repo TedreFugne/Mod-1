@@ -10,7 +10,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 public class ModTileEntityTypes 
 {
-	@SuppressWarnings("deprecation")
 	public static final DeferredRegister<TileEntityType<?>> TILE_ENTITY_TYPES = new DeferredRegister<>(ForgeRegistries.TILE_ENTITIES, Mod1.MOD_ID);
 	public static final RegistryObject<TileEntityType<QuarryTileEntity>> QUARRY = TILE_ENTITY_TYPES.register("quarry", () -> TileEntityType.Builder.create(QuarryTileEntity::new, BlockInit.quarry).build(null));
 }
