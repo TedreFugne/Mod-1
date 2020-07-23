@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:stick"
+    },
+    {
+      "item": "mod1:mod1_item"
+    }
+  ],
+  "result": {
+    "item": "mod1:mod1_hoe"
+  }
+}
