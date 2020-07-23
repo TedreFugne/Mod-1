@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "I I",
+    "I I"
+  ],
+  "key": {
+    "I": {
+      "item": "mod1:mod1_item"
+    },
+  "result": {
+    "item": "mod1:mod1_boots"
+  }
+}
