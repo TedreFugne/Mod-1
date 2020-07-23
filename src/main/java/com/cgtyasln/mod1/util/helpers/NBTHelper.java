@@ -1,9 +1,15 @@
 package com.cgtyasln.mod1.util.helpers;
 
+import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
+
 import com.cgtyasln.mod1.tileentity.QuarryTileEntity;
 
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.CompoundNBT;
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.registries.ForgeRegistries;
 
 public class NBTHelper 
 {
@@ -38,5 +44,21 @@ public class NBTHelper
 		nbt.putString("item", i.getItem().getRegistryName().toString());
 		nbt.putByte("type", (byte)0);
 		return nbt;
+	}
+	
+	@Nullable
+	public static Object fromNBT(@Nonnull CompoundNBT compound) {
+		switch (compound.getByte("type")) {
+		case 0:
+			return readItemStack(compound);
+		default:
+			return null;
+		}
+	}
+
+	private static ItemStack readItemStack(CompoundNBT compound) {
+		Item item = ForgeRegistries.ITEMS.getValue(new ResourceLocation(compound.getString("item")));
+		int count = compound.getInt("count");
+		return new ItemStack(item, count);
 	}
 }
