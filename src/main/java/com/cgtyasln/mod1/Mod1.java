@@ -72,4 +72,4 @@ public class Mod1
     		return new ItemStack(BlockInit.mod1_block);
     	}
     }
-} 
+}
