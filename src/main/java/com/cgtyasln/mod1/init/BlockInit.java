@@ -2,6 +2,7 @@ package com.cgtyasln.mod1.init;
 
 import com.cgtyasln.mod1.Mod1;
 import com.cgtyasln.mod1.Mod1.Mod1ItemGroup;
+import com.cgtyasln.mod1.objects.blocks.BlockQuarry;
 import com.cgtyasln.mod1.objects.blocks.SpecialBlock;
 
 import net.minecraft.block.Block;
@@ -22,12 +23,14 @@ public class BlockInit
 {
 	public static final Block mod1_block = null;
 	public static final Block special_block = null;
+	public static final Block quarry = null;
 	
 	@SubscribeEvent
 	public static void registerBlocks(final RegistryEvent.Register<Block> event) 
 	{
 		event.getRegistry().register(new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(0.5F, 15.0F).sound(SoundType.SAND)).setRegistryName("mod1_block"));
 		event.getRegistry().register(new SpecialBlock(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f, 10.0f).harvestLevel(2).harvestTool(ToolType.PICKAXE).sound(SoundType.GLASS).lightValue(4)).setRegistryName("special_block"));
+		event.getRegistry().register(new BlockQuarry(Block.Properties.create(Material.IRON)).setRegistryName("quarry"));
 	}
 	
 	@SubscribeEvent
@@ -35,6 +38,7 @@ public class BlockInit
 	{
 		event.getRegistry().register(new BlockItem(mod1_block, new Item.Properties().maxStackSize(5).group(Mod1ItemGroup.instance)).setRegistryName("mod1_block"));
 		event.getRegistry().register(new BlockItem(special_block, new Item.Properties().group(Mod1ItemGroup.instance)).setRegistryName("special_block"));
+		event.getRegistry().register(new BlockItem(quarry, new Item.Properties().group(Mod1ItemGroup.instance)).setRegistryName("quarry"));
 	}
 	
 }

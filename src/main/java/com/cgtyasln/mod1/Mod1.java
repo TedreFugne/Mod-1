@@ -5,6 +5,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.cgtyasln.mod1.init.BlockInit;
+import com.cgtyasln.mod1.init.ModTileEntityTypes;
 import com.cgtyasln.mod1.world.gen.ModOreGen;
 
 import net.minecraft.item.ItemGroup;
@@ -31,6 +32,9 @@ public class Mod1
     	final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         modEventBus.addListener(this::setup);
         modEventBus.addListener(this::doClientStuff);
+        
+        ModTileEntityTypes.TILE_ENTITY_TYPES.register(modEventBus);
+        
         instance = this;
 
         MinecraftForge.EVENT_BUS.register(this);
