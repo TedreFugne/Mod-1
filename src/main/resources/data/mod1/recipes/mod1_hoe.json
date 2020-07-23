@@ -1,14 +1,19 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "minecraft:stick"
-    },
-    {
-      "item": "mod1:mod1_item"
-    }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " II",
+    " S ",
+    " S "
   ],
+  "key": {
+    "I": {
+      "item": "mod1:mod1_item"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
   "result": {
-    "item": "mod1:mod1_hoe"
+    "item": "mod1:mod1_item"
   }
 }
