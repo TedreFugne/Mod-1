@@ -14,6 +14,7 @@
 	
 	"block.mod1.mod1_block": "Mod Block",
 	"block.mod1.special_block": "Special Block",
+	"block.mod1.quarry": "Quarry",
 	
 	"itemGroup.modtab": "Mod Tab"
 }
