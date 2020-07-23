@@ -1,0 +1,19 @@
+{
+	"item.mod1.mod1_item": "Mod Item",
+	
+	"item.mod1.mod1_sword": "Mod Sword",
+	"item.mod1.mod1_pickaxe": "Mod Pickaxe",
+	"item.mod1.mod1_shovel": "Mod Shovel",
+	"item.mod1.mod1_axe": "Mod Axe",
+	"item.mod1.mod1_hoe": "Mod Hoe",
+	
+	"item.mod1.mod1_helmet": "Mod Helmet",
+	"item.mod1.mod1_chestplate": "Mod Chestplate",
+	"item.mod1.mod1_leggings": "Mod Leggings",
+	"item.mod1.mod1_boots": "Mod Boots",
+	
+	"block.mod1.mod1_block": "Mod Block",
+	"block.mod1.special_block": "Special Block",
+	
+	"itemGroup.modtab": "Mod Tab"
+}
