@@ -36,7 +36,6 @@ public class Mod1
         ModTileEntityTypes.TILE_ENTITY_TYPES.register(modEventBus);
         
         instance = this;
-
         MinecraftForge.EVENT_BUS.register(this);
     }
 
