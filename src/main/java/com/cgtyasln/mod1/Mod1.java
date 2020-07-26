@@ -10,12 +10,10 @@ import com.cgtyasln.mod1.init.ItemInitNew;
 import com.cgtyasln.mod1.init.ModTileEntityTypes;
 import com.cgtyasln.mod1.world.gen.ModOreGen;
 
-import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraft.tileentity.TileEntity;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
